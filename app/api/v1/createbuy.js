@@ -8,6 +8,17 @@ module.exports = (app, JL) => {
 
         const { dateCreate, customer, products } = request.body;
 
+        if (dateCreate === undefined || dateCreate === null || dateCreate === "" ||
+            customer === undefined || customer === null || customer === "" ||
+            products === undefined || products === null || !Array.isArray(products)) {
+            JL("routesjs.logger").error("Missing data to complete");
+            response.statusCode = 404;
+            return response.json({
+                "purchase": "",
+                "msg": "Missing data fill out."
+            });
+        }
+
         Purchase.create({
             dateCreate: dateCreate,
             customer: customer,
