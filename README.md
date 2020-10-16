@@ -17,6 +17,7 @@ El modo de producción y desarrollo, en estos momentos solo se diferencia que en
 ### Producción 
 1. Ejecutar el comando `npm install` el cual instala las dependencias del proyecto.
 2. Ejecutar el comando `npm run start` el cual sincronizara la base de datos y arrancara el servidor.
+3. Abrir en el navegador o en aplicación como Postman / insomnia rest, la url `http://localhost:8880`, habra un JSON con la descripción de las URLS en funcionamiento, describiendolas. 
 
 ### Desarrollo
 1. Ejecutar el comando `npm install` el cual instala las dependencias del proyecto.
