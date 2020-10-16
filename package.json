@@ -1,0 +1,25 @@
+{
+  "name": "backend-test",
+  "version": "1.0.0",
+  "description": "Backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "population-db": "node config/population.db.js",
+    "development": "concurrently \"nodemon server.js\" "
+  },
+  "author": "Luis Felipe Cerero Garcia",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "latest",
+    "express": "latest",
+    "jsnlog": "latest",
+    "pg": "latest",
+    "pg-hstore": "latest",
+    "sequelize": "latest"
+  },
+  "devDependencies": {
+    "nodemon": "1.x",
+    "concurrently": "latest"
+  }
+}
