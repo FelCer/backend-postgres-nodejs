@@ -9,6 +9,7 @@ Backend echo en Nodejs que esta integrado con una base de datos en Postgres, la 
 - [Git](https://git-scm.com/)
 - [Node.js and npm](nodejs.org) 
 - [PostgreSQL](https://www.postgresql.org/) 
+- - Crear una base de datos llamada company o cambiar la configuración del archivo db.js
 
 ## USO
 
