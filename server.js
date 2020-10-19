@@ -46,6 +46,16 @@ JL("routesjs.logger").setOptions({
     "level": logLevel
 });
 
+if(devEnvironment != 'pro'){
+    app.use(function (request, response, next) {
+        //Enabling CORS
+        response.header("Access-Control-Allow-Origin", "*");
+        response.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+        response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, x - client - key, x - client - token, x - client - secret, Authorization");
+        next();
+    });
+}
+
 const port = 8880;
 
 require("./app/routes/routes.js")(app, JL);

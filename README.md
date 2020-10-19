@@ -1,6 +1,6 @@
 # Backend-Postgres-Nodejs
 
-Backend echo en Nodejs que esta integrado con una base de datos en Postgres, la cual utiliza a su vez un ORM sequelize.
+Backend hecho en Nodejs que esta integrado con una base de datos en Postgres, la cual utiliza a su vez un ORM sequelize.
 
 ## Empezando
 
@@ -31,3 +31,5 @@ El modo de producción y desarrollo, en estos momentos solo se diferencia que en
 ## Colaboradores
 
 [Felipe Cerero Garcia] *FullStack Javascript Developer*
+
+# Backend-Postgres-Nodejs
